@@ -12,6 +12,17 @@ use Guzzle\Plugin\Log\LogPlugin;
  *
  * @package AJT\MozillaAddons
  *
+ *
+ * @method array getDownloadsPerDay(array $args = array())
+ * @method array getDownloadSourcesPerDay(array $args = array())
+ * @method array getUsagePerDay(array $args = array())
+ * @method array getVersionsPerDay(array $args = array())
+ * @method array getApplicationsPerDay(array $args = array())
+ * @method array getPlatformsPerDay(array $args = array())
+ * @method array getLocalesPerDay(array $args = array())
+ * @method array getAddonStatusPerDay(array $args = array())
+ * @method array getContributionsPerDay(array $args = array())
+ *
  */
 class MozillaAddonsClient extends Client
 {

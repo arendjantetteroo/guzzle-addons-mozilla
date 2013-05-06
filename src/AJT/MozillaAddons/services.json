@@ -11,10 +11,162 @@
                 }
             }
         },
+        "GetDownloadsPerDay": {
+            "extends": "abstract",
+            "uri": "downloads-day-{date_start}-{date_end}.json",
+            "summary": "Get Downloads per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetDownloadSourcesPerDay": {
+            "extends": "abstract",
+            "uri": "sources-day-{date_start}-{date_end}.json",
+            "summary": "Get Download Sources per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
         "GetUsagePerDay": {
             "extends": "abstract",
             "uri": "usage-day-{date_start}-{date_end}.json",
             "summary": "Get Usage per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetVersionsPerDay": {
+            "extends": "abstract",
+            "uri": "versions-day-{date_start}-{date_end}.json",
+            "summary": "Get Used Versions per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetApplicationsPerDay": {
+            "extends": "abstract",
+            "uri": "apps-day-{date_start}-{date_end}.json",
+            "summary": "Get Applications (Firefox Versions) per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetLocalesPerDay": {
+            "extends": "abstract",
+            "uri": "locales-day-{date_start}-{date_end}.json",
+            "summary": "Get Used Languages per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetPlatformsPerDay": {
+            "extends": "abstract",
+            "uri": "os-day-{date_start}-{date_end}.json",
+            "summary": "Get Used Platforms (OS Version) per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetAddonStatusPerDay": {
+            "extends": "abstract",
+            "uri": "statuses-day-{date_start}-{date_end}.json",
+            "summary": "Get Addon statuses per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        },
+        "GetContributionsPerDay": {
+            "extends": "abstract",
+            "uri": "contributions-day-{date_start}-{date_end}.json",
+            "summary": "Get Contributions per day",
             "parameters": {
                 "date_start": {
                     "location": "uri",
