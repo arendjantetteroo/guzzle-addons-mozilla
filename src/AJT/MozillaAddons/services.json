@@ -1,0 +1,34 @@
+{
+    "name": "Asana",
+    "description": "Mozilla Addons Statistics API",
+    "operations": {
+        "abstract": {
+            "httpMethod": "GET",
+            "parameters": {
+                "Content-Type": {
+                    "location": "header",
+                    "default": "application/json"
+                }
+            }
+        },
+        "GetUsagePerDay": {
+            "extends": "abstract",
+            "uri": "usage-day-{date_start}-{date_end}.json",
+            "summary": "Get Usage per day",
+            "parameters": {
+                "date_start": {
+                    "location": "uri",
+                    "description": "Start date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                },
+                "date_end": {
+                    "location": "uri",
+                    "description": "End date in YYYYMMDD format",
+                    "required": true,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

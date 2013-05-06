@@ -1,0 +1,12 @@
+<?php
+/**
+ * Copy this file to app.config.php and fill in the necessary details
+ * 
+ */
+
+/**
+ * The name of the app as referred to by mozilla, you can find this in the url after
+ * https://addons.mozilla.org/nl/firefox/addon/{appname}
+ * @var string
+ */
+$app_name = '';

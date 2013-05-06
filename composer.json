@@ -1,0 +1,23 @@
+{
+    "name": "ajt/guzzle-addons-mozilla",
+    "description": "An API client for the Mozilla Addons statistics based on Guzzle PHP",
+    "require": {
+        "guzzle/guzzle": "~3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arend-Jan Tetteroo",
+            "email": "aj@arendjantetteroo.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+        "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-0": {"AJT": "src/"}
+    }
+}
